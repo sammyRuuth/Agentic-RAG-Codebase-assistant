@@ -67,7 +67,7 @@ uv run python -m eval.evaluate -v                    # retrieval metrics
 | BM25 only       | 0.295 | 0.750 | 1.00   | 0.908 |
 | **Hybrid (RRF)**| 0.270 | 0.700 | 0.95   | 0.854 |
 
-With about 4 relevant chunks per query, the best possible P@10 is 0.39. Hybrid beats dense-only on every metric. On this query set BM25 alone does best, because the queries share vocabulary with the code. See [docs/GUIDE.md](docs/GUIDE.md#9-evaluation) for the analysis.
+With about 4 relevant chunks per query, the best possible P@10 is 0.39. Hybrid beats dense-only on every metric. On this query set BM25 alone does best, because the queries share vocabulary with the code.
 
 ## Layout
 
@@ -82,5 +82,4 @@ agent/prompts.py      prompts for grading, rewriting, answering, judging
 agent/llm.py          Ollama model factory
 agent/cli.py          command-line entry point
 eval/                 labeled queries + metrics
-docs/GUIDE.md         design notes and every decision explained
 ```

@@ -2,3 +2,4 @@ data/
 .venv/
 chroma_db/
 __pycache__/
+notes/
