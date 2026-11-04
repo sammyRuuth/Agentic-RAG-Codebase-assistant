@@ -1,0 +1,14 @@
+[project]
+name = "codebase-rag"
+version = "0.1.0"
+description = "Self-corrective agentic RAG over a Python codebase with local SLMs"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "langchain-chroma>=1.1.0",
+    "langchain-core>=1.7.3",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.19",
+    "rank-bm25>=0.2.2",
+    "snowballstemmer>=3.1.1",
+]
